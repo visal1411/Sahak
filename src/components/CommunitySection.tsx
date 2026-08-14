@@ -7,26 +7,27 @@ export default function CommunitySection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <ScrollReveal direction="up" delay={100} className="max-w-4xl mr-auto">
           <div className="group relative bg-gradient-to-br from-[#1966DD] via-[#1455BD] to-[#0E3E8C] text-white rounded-2xl sm:rounded-3xl p-6 sm:p-8 shadow-md hover:shadow-xl transition-all duration-500 hover:-translate-y-1 border border-blue-400/20 overflow-hidden">
-            
             {/* Ambient Background Glowing Orb */}
             <div className="absolute -top-24 -left-24 w-56 h-56 bg-sky-300/25 rounded-full blur-2xl animate-pulse-glow pointer-events-none" />
             <div className="absolute -bottom-20 -right-20 w-60 h-60 bg-teal-400/20 rounded-full blur-2xl animate-pulse-glow pointer-events-none" />
-            
+
             {/* Decorative Subtle Grid overlay */}
             <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:16px_16px] pointer-events-none" />
 
             <div className="relative z-10 grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
-              
               {/* Left Text Content */}
               <div className="md:col-span-7 flex flex-col items-start text-left">
                 <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-[11px] font-semibold text-blue-100 mb-3 shadow-xs">
-                  Peer Network
+                  សហគមន៍អ្នកសិក្សា
                 </span>
                 <h2 className="text-xl sm:text-2xl lg:text-3xl font-extrabold text-white tracking-tight leading-tight mb-3">
-                  Supportive Community
+                  សហគមន៍ដែលគាំទ្រគ្នា
                 </h2>
                 <p className="text-sm sm:text-base text-blue-50/95 font-normal leading-relaxed max-w-md">
-                  Join a thriving, collaborative network of students across Cambodia. Connect with study partners, exchange real-time feedback, and achieve your learning goals together.
+                  ចូលរួមជាមួយសហគមន៍អ្នកសិក្សាពីទូទាំងប្រទេសកម្ពុជា
+                  ដែលតែងតែជួយគាំទ្រ និងរៀនពីគ្នា។ ស្វែងរកមិត្តសិក្សា
+                  ផ្លាស់ប្តូរមតិយោបល់ភ្លាមៗ
+                  និងរីកចម្រើនឆ្ពោះទៅរកគោលដៅសិក្សាជាមួយគ្នា។
                 </p>
               </div>
 
@@ -35,7 +36,7 @@ export default function CommunitySection() {
                 <div className="relative w-32 h-32 sm:w-40 sm:h-40 lg:w-44 lg:h-44 flex items-center justify-center p-2">
                   <div className="absolute inset-0 rounded-full border border-white/30 animate-ping opacity-20 pointer-events-none" />
                   <div className="absolute inset-2 bg-white/10 rounded-full blur-sm scale-95" />
-                  
+
                   <Image
                     src="/icons/community.svg"
                     alt="Supportive Community Icon"
@@ -46,7 +47,6 @@ export default function CommunitySection() {
                   />
                 </div>
               </div>
-
             </div>
           </div>
         </ScrollReveal>
@@ -54,5 +54,3 @@ export default function CommunitySection() {
     </section>
   );
 }
-
-

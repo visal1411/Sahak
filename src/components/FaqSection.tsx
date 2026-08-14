@@ -14,29 +14,29 @@ export default function FaqSection() {
 
   const faqs: FaqItem[] = [
     {
-      question: "What is SaHak and how does it work?",
+      question: "SaHak ជាអ្វី ហើយដំណើរការយ៉ាងដូចម្តេច?",
       answer:
-        "SaHak is a peer-to-peer collaborative learning platform built for Cambodian students. It matches you with compatible study partners based on your subjects, skill level, and schedule so you can solve problem sets, exchange study guides, and learn together.",
+        "SaHak គឺជាវេទិកាសិក្សាសហការរវាងមិត្តអ្នកសិក្សា ដែលបង្កើតឡើងសម្រាប់និស្សិតកម្ពុជា។ វាជួយស្វែងរកមិត្តសិក្សាដែលស័ក្តិសមនឹងអ្នក ដោយផ្អែកលើមុខវិជ្ជា កម្រិតជំនាញ និងពេលវេលាសិក្សារបស់អ្នក ដើម្បីឱ្យអ្នកអាចដោះស្រាយលំហាត់ ចែករំលែកឯកសារសិក្សា និងរៀនជាមួយគ្នា។",
     },
     {
-      question: "Is SaHak free to use for students?",
+      question: "តើ SaHak អាចប្រើបានដោយឥតគិតថ្លៃសម្រាប់និស្សិតឬទេ?",
       answer:
-        "Yes! SaHak is free for all students to join. You can find study partners, join group study rooms, and access shared community learning resources at zero cost.",
+        "បាទ/ចាស! SaHak អាចប្រើបានដោយឥតគិតថ្លៃសម្រាប់និស្សិតគ្រប់រូប។ អ្នកអាចស្វែងរកមិត្តសិក្សា ចូលរួមថ្នាក់សិក្សាជាក្រុម និងប្រើប្រាស់ធនធានសិក្សាដែលសហគមន៍ចែករំលែកបានដោយឥតគិតថ្លៃ។",
     },
     {
-      question: "How can I earn money on SaHak?",
+      question: "តើខ្ញុំអាចរកចំណូលតាមរយៈ SaHak បានយ៉ាងដូចម្តេច?",
       answer:
-        "If you excel in specific academic subjects or technical skills (such as Coding, Math, or Languages), you can apply to become a peer mentor. By hosting guided study sessions and sharing top-rated study guides, top mentors earn over $100 per month.",
+        "ប្រសិនបើអ្នកពូកែក្នុងមុខវិជ្ជា ឬជំនាញដូចជា ការសរសេរកូដ គណិតវិទ្យា ឬភាសា អ្នកអាចដាក់ពាក្យធ្វើជា Mentor នៅលើ SaHak។ អ្នកអាចដឹកនាំការសិក្សាជាមួយមិត្ត និងចែករំលែកឯកសារសិក្សាដែលមានប្រយោជន៍ ដើម្បីរកចំណូលបាន។ Mentor ដែលមានសកម្មភាពល្អ អាចរកចំណូលបានលើសពី $100 ក្នុងមួយខែ។",
     },
     {
-      question: "How does the peer matching system work?",
+      question: "តើប្រព័ន្ធស្វែងរកមិត្តសិក្សាដំណើរការយ៉ាងដូចម្តេច?",
       answer:
-        "Our smart matching system analyzes your university/high school courses, learning goals, preferred study times, and skill level to connect you with peers who complement your study style.",
+        "ប្រព័ន្ធស្វែងរកមិត្តសិក្សាដ៏ឆ្លាតវៃរបស់យើង នឹងវិភាគលើ មុខវិជ្ជាសិក្សា គោលដៅសិក្សា ពេលវេលាដែលអ្នកចូលចិត្តសិក្សា និងកម្រិតជំនាញ របស់អ្នក ដើម្បីស្វែងរកមិត្តដែលសមស្រប និងមានរបៀបសិក្សាដែលសមស្របជាមួយអ្នក។",
     },
     {
-      question: "What subjects do we have?",
+      question: "តើSaHakមានមុខវិជ្ជាអ្វីខ្លះ?",
       answer:
-        "SaHak supports a wide range of academic subjects including Math, Chemistry, History, Social Studies, Khmer, Physics, and Earth Science.",
+        "SaHak គាំទ្រមុខវិជ្ជាសិក្សាជាច្រើន ដូចជា គណិតវិទ្យា គីមីវិទ្យា ប្រវត្តិវិទ្យា សិក្សាសង្គម ភាសាខ្មែរ រូបវិទ្យា និងវិទ្យាសាស្ត្រផែនដី។",
     },
   ];
 
@@ -45,9 +45,11 @@ export default function FaqSection() {
   };
 
   return (
-    <section id="faqs" className="py-16 sm:py-24 bg-gray-50/60 overflow-hidden relative border-t border-gray-100">
+    <section
+      id="faqs"
+      className="py-16 sm:py-24 bg-gray-50/60 overflow-hidden relative border-t border-gray-100"
+    >
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        
         {/* Header */}
         <div className="text-center mb-16">
           <ScrollReveal direction="up" delay={100}>
@@ -58,7 +60,8 @@ export default function FaqSection() {
 
           <ScrollReveal direction="up" delay={200}>
             <p className="text-base sm:text-lg text-gray-600 font-normal leading-relaxed">
-              Have questions about SaHak? We have answers. Learn how our peer learning and mentoring network works.
+              Have questions about SaHak? We have answers. Learn how our peer
+              learning and mentoring network works.
             </p>
           </ScrollReveal>
         </div>
@@ -68,7 +71,11 @@ export default function FaqSection() {
           {faqs.map((faq, index) => {
             const isOpen = openIndex === index;
             return (
-              <ScrollReveal key={faq.question} direction="up" delay={100 * (index + 1)}>
+              <ScrollReveal
+                key={faq.question}
+                direction="up"
+                delay={100 * (index + 1)}
+              >
                 <div className="border border-gray-200/90 rounded-2xl overflow-hidden bg-white shadow-xs hover:border-gray-300 transition-all">
                   <button
                     type="button"
@@ -94,7 +101,6 @@ export default function FaqSection() {
             );
           })}
         </div>
-
       </div>
     </section>
   );

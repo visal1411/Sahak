@@ -9,17 +9,25 @@ export default function Footer() {
       {/* Background Ambient Glow */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[250px] bg-blue-600/10 blur-[120px] rounded-full pointer-events-none" />
 
-      <ScrollReveal direction="up" delay={100} className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <ScrollReveal
+        direction="up"
+        delay={100}
+        className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10"
+      >
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12 border-b border-gray-800/80">
-
           {/* Brand & Description Column */}
           <div className="md:col-span-4 flex flex-col items-start space-y-4">
-            <a href="#" className="flex items-center space-x-2 text-2xl font-extrabold text-white tracking-tight">
+            <a
+              href="#"
+              className="flex items-center space-x-2 text-2xl font-extrabold text-white tracking-tight"
+            >
               <span className="text-[#1966DD]">SaHak</span>
             </a>
 
             <p className="text-sm text-gray-400 font-normal leading-relaxed max-w-sm">
-              Empowering peer-to-peer collaborative learning. Connect with peers who share your goals, teach what you know, and learn together.
+              លើកកម្ពស់ការរៀនសូត្រដោយសហការជាមួយមិត្ត។
+              ស្វែងរកមិត្តដែលមានគោលដៅដូចគ្នា ចែករំលែកចំណេះដឹងរបស់អ្នក
+              និងរៀនរីកចម្រើនជាមួយគ្នា។
             </p>
 
             {/* Social Icons */}
@@ -39,38 +47,91 @@ export default function Footer() {
           {/* Quick Links Columns */}
           <div className="md:col-span-4 grid grid-cols-2 gap-8">
             <div>
-              <h3 className="text-sm font-semibold text-white tracking-wider uppercase mb-4">Navigation</h3>
+              <h3 className="text-sm font-semibold text-white tracking-wider uppercase mb-4">
+                មាតិកា
+              </h3>
               <ul className="space-y-2.5 text-sm">
-                <li><a href="#home" className="hover:text-white transition-colors">Home</a></li>
-                <li><a href="#how-it-works" className="hover:text-white transition-colors">How It Works</a></li>
-                <li><a href="#about" className="hover:text-white transition-colors">About Us</a></li>
-                <li><a href="#faqs" className="hover:text-white transition-colors">FAQs</a></li>
+                <li>
+                  <a
+                    href="#home"
+                    className="hover:text-white transition-colors"
+                  >
+                    ទំព័រដើម
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#how-it-works"
+                    className="hover:text-white transition-colors"
+                  >
+                    របៀបប្រើប្រាស់
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#about"
+                    className="hover:text-white transition-colors"
+                  >
+                    អំពីយើង
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#faqs"
+                    className="hover:text-white transition-colors"
+                  >
+                    សំណួរទូទៅ
+                  </a>
+                </li>
               </ul>
             </div>
 
             <div>
-              <h3 className="text-sm font-semibold text-white tracking-wider uppercase mb-4">Resources</h3>
+              <h3 className="text-sm font-semibold text-white tracking-wider uppercase mb-4">
+                ធនធាន
+              </h3>
               <ul className="space-y-2.5 text-sm">
-                <li><a href="#" className="hover:text-white transition-colors">Guidelines</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Learning Hub</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Help Center</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Contact Support</a></li>
+                <li>
+                  <a href="#" className="hover:text-white transition-colors">
+                    គោលការណ៍ណែនាំ
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-white transition-colors">
+                    មជ្ឈមណ្ឌលសិក្សា
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-white transition-colors">
+                    មជ្ឈមណ្ឌលជំនួយ
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-white transition-colors">
+                    ស្នើសុំជំនួយ
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
 
           {/* Newsletter Box */}
           <div className="md:col-span-4 flex flex-col items-start space-y-4">
-            <h3 className="text-sm font-semibold text-white tracking-wider uppercase">Stay Updated</h3>
+            <h3 className="text-sm font-semibold text-white tracking-wider uppercase">
+              ទទួលបានព័ត៌មានថ្មីៗ
+            </h3>
             <p className="text-sm text-gray-400">
-              Subscribe to get the latest study guides, updates, and community news.
+              ចុះឈ្មោះ ដើម្បីទទួលបានព័ត៌មានថ្មីៗ ឯកសារសិក្សា និងព័ត៌មានពីសហគមន៍។
             </p>
 
-            <form onSubmit={(e) => e.preventDefault()} className="w-full space-y-2">
+            <form
+              onSubmit={(e) => e.preventDefault()}
+              className="w-full space-y-2"
+            >
               <div className="relative w-full">
                 <input
                   type="email"
-                  placeholder="Enter your email address"
+                  placeholder="បញ្ចូលអាសយដ្ឋានអ៊ីមែលរបស់អ្នក"
                   className="w-full bg-gray-900 border border-gray-800 rounded-xl px-4 py-3 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-[#1966DD] focus:ring-1 focus:ring-[#1966DD] transition-all pr-12"
                   required
                 />
@@ -82,26 +143,34 @@ export default function Footer() {
                   <Send className="w-4 h-4" />
                 </button>
               </div>
-              <p className="text-xs text-gray-500">We respect your privacy. Unsubscribe anytime.</p>
+              <p className="text-xs text-gray-500">
+                យើងគោរពភាពឯកជនរបស់អ្នក។​ អ្នកអាចឈប់ជាវបានគ្រប់ពេល។
+              </p>
             </form>
           </div>
-
         </div>
 
         {/* Bottom Legal & Copyright Bar */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-500">
           <p className="flex items-center gap-1">
-            © {new Date().getFullYear()} SaHak. Built with <Heart className="w-3.5 h-3.5 text-red-500 inline fill-red-500" /> for Cambodian learners.
+            © {new Date().getFullYear()} SaHak. បង្កើតឡើងដោយ{" "}
+            <Heart className="w-3.5 h-3.5 text-red-500 inline fill-red-500" />{" "}
+            សម្រាប់សិស្សនិស្សិតកម្ពុជា
           </p>
 
           <div className="flex items-center space-x-6">
-            <a href="#" className="hover:text-gray-400 transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-gray-400 transition-colors">Terms of Service</a>
-            <a href="#" className="hover:text-gray-400 transition-colors">Cookie Settings</a>
+            <a href="#" className="hover:text-gray-400 transition-colors">
+              គោលការណ៍ឯកជនភាព
+            </a>
+            <a href="#" className="hover:text-gray-400 transition-colors">
+              លក្ខខណ្ឌនៃការប្រើប្រាស់
+            </a>
+            <a href="#" className="hover:text-gray-400 transition-colors">
+              ការកំណត់ខូឃី
+            </a>
           </div>
         </div>
       </ScrollReveal>
     </footer>
   );
 }
-

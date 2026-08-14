@@ -22,30 +22,31 @@ export default function HowItWorks() {
   };
 
   return (
-    <section id="how-it-works" className="py-16 sm:py-24 bg-gray-50/60 overflow-hidden relative border-y border-gray-100">
+    <section
+      id="how-it-works"
+      className="py-16 sm:py-24 bg-gray-50/60 overflow-hidden relative border-y border-gray-100"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 sm:mb-20">
           <ScrollReveal direction="up" delay={100}>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 tracking-tight leading-tight mb-4">
-              How SaHak Works
+              របៀបប្រើប្រាស់ SaHak
             </h2>
           </ScrollReveal>
 
           <ScrollReveal direction="up" delay={200}>
             <p className="text-base sm:text-lg text-gray-600 font-normal leading-relaxed">
-              Download the SaHak app from App Store or Play Store, create an account, set your learning goals, and connect with peer study partners.
+              ទាញយកកម្មវិធី SaHak ពី App Store ឬ Play Store បង្កើតគណនី
+              កំណត់គោលដៅសិក្សារបស់អ្នក ហើយស្វែងរកមិត្តសិក្សាដែលមានគោលដៅដូចគ្នា។
             </p>
           </ScrollReveal>
         </div>
 
         {/* 3-Column Layout: Left Steps, Center Phone Mockup, Right Steps */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center max-w-6xl mx-auto">
-          
           {/* Left Column (Step 1 & Step 2) */}
           <div className="lg:col-span-4 space-y-12 sm:space-y-16 text-center lg:text-right">
-            
             {/* Step 1 */}
             <ScrollReveal direction="right" delay={150}>
               <div className="group cursor-pointer flex flex-col items-center lg:items-end transition-all duration-300 hover:-translate-y-1">
@@ -53,10 +54,11 @@ export default function HowItWorks() {
                   1
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 group-hover:text-[#1966DD] mb-2 tracking-tight transition-colors">
-                  Request a Peer
+                  ស្នើសុំមិត្តសិក្សា
                 </h3>
                 <p className="text-sm text-gray-600 leading-relaxed max-w-xs">
-                  Choose your subject, learning goals, and session type that fits your needs.
+                  ជ្រើសរើសមុខវិជ្ជា គោលដៅសិក្សា និងប្រភេទសិក្សា
+                  ដែលសមស្របនឹងតម្រូវការរបស់អ្នក។
                 </p>
               </div>
             </ScrollReveal>
@@ -68,26 +70,27 @@ export default function HowItWorks() {
                   2
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 group-hover:text-[#1966DD] mb-2 tracking-tight transition-colors">
-                  Match with a Peer
+                  ផ្សារភ្ជាប់ជាមួយមិត្តសិក្សា
                 </h3>
                 <p className="text-sm text-gray-600 leading-relaxed max-w-xs">
-                  SaHak will match you with the nearest available study partner.
+                  SaHak នឹងជួយស្វែងរកមិត្តសិក្សាដែលនៅជិតអ្នកបំផុត។
                 </p>
               </div>
             </ScrollReveal>
-
           </div>
 
           {/* Center Column: Phone Mockup with Background Circle Accent */}
           <div className="lg:col-span-4 flex justify-center items-center my-6 lg:my-0">
-            <ScrollReveal direction="scale" delay={200} className="relative flex justify-center items-center">
-              
+            <ScrollReveal
+              direction="scale"
+              delay={200}
+              className="relative flex justify-center items-center"
+            >
               {/* Background Colored Circle Accent with Ambient Glow */}
               <div className="absolute w-72 h-72 sm:w-80 sm:h-80 lg:w-84 lg:h-84 bg-gradient-to-tr from-[#1966DD] to-blue-500 rounded-full blur-xs shadow-2xl shadow-blue-500/30 pointer-events-none" />
 
               {/* Realistic Mobile Phone Container */}
               <div className="relative z-10 w-[240px] sm:w-[260px] aspect-[9/19] bg-gray-950 rounded-[40px] p-1.5 shadow-2xl border-4 border-gray-900 ring-1 ring-black/80">
-                
                 {/* Hardware Side Buttons */}
                 <div className="absolute -left-1.5 top-20 w-1 h-8 bg-gray-800 rounded-l-md" />
                 <div className="absolute -left-1.5 top-32 w-1 h-8 bg-gray-800 rounded-l-md" />
@@ -99,7 +102,7 @@ export default function HowItWorks() {
                 </div>
 
                 {/* Inner Screen Container for Local MP4 Video */}
-                <div 
+                <div
                   onClick={togglePlay}
                   className="w-full h-full bg-gray-950 rounded-[32px] overflow-hidden relative shadow-inner flex items-center justify-center cursor-pointer group"
                 >
@@ -131,13 +134,11 @@ export default function HowItWorks() {
                   )}
                 </div>
               </div>
-
             </ScrollReveal>
           </div>
 
           {/* Right Column (Step 3 & Step 4) */}
           <div className="lg:col-span-4 space-y-12 sm:space-y-16 text-center lg:text-left">
-            
             {/* Step 3 */}
             <ScrollReveal direction="left" delay={300}>
               <div className="group cursor-pointer flex flex-col items-center lg:items-start transition-all duration-300 hover:-translate-y-1">
@@ -145,10 +146,11 @@ export default function HowItWorks() {
                   3
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 group-hover:text-[#1966DD] mb-2 tracking-tight transition-colors">
-                  Enjoy Your Session
+                  ចាប់ផ្តើមការសិក្សារបស់អ្នក
                 </h3>
                 <p className="text-sm text-gray-600 leading-relaxed max-w-xs">
-                  Meet your study partner in live rooms, solve problems, and learn together.
+                  សិក្សាជាមួយមិត្តរបស់អ្នកផ្ទាល់ ដោះស្រាយបញ្ហា
+                  និងរៀនពីគ្នាទៅវិញទៅមក។
                 </p>
               </div>
             </ScrollReveal>
@@ -160,18 +162,15 @@ export default function HowItWorks() {
                   4
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 group-hover:text-[#1966DD] mb-2 tracking-tight transition-colors">
-                  Pay and Rate
+                  វាយតម្លៃ និងផ្តល់មតិ
                 </h3>
                 <p className="text-sm text-gray-600 leading-relaxed max-w-xs">
-                  Complete the session, rate your peer partner, and build your reputation.
+                  បញ្ចប់វគ្គសិក្សា ផ្តល់ការវាយតម្លៃ និងកសាងភាពជឿទុកចិត្ត។
                 </p>
               </div>
             </ScrollReveal>
-
           </div>
-
         </div>
-
       </div>
     </section>
   );
