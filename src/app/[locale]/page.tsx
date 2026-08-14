@@ -20,8 +20,9 @@ export default function Home() {
       <EarnSection />
       <CommunitySection />
       <FaqSection />
-      <Footer />
       <DownloadApp />
+      <Footer />
+    
     </main>
   );
 }
