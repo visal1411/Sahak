@@ -3,8 +3,10 @@
 import { useState, useRef } from "react";
 import { Play } from "lucide-react";
 import ScrollReveal from "./ScrollReveal";
+import { useTranslations } from "next-intl";
 
 export default function HowItWorks() {
+  const t = useTranslations("HowItWorks");
   const [isPlaying, setIsPlaying] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
 
@@ -29,13 +31,13 @@ export default function HowItWorks() {
         <div className="text-center max-w-3xl mx-auto mb-16 sm:mb-20">
           <ScrollReveal direction="up" delay={100}>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 tracking-tight leading-tight mb-4">
-              How SaHak Works
+              {t("header")}
             </h2>
           </ScrollReveal>
 
           <ScrollReveal direction="up" delay={200}>
             <p className="text-base sm:text-lg text-gray-600 font-normal leading-relaxed">
-              Download the SaHak app from App Store or Play Store, create an account, set your learning goals, and connect with peer study partners.
+              {t("description")}
             </p>
           </ScrollReveal>
         </div>
@@ -53,10 +55,10 @@ export default function HowItWorks() {
                   1
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 group-hover:text-[#1966DD] mb-2 tracking-tight transition-colors">
-                  Request a Peer
+                  {t("step1Title")}
                 </h3>
                 <p className="text-sm text-gray-600 leading-relaxed max-w-xs">
-                  Choose your subject, learning goals, and session type that fits your needs.
+                  {t("step1Desc")}
                 </p>
               </div>
             </ScrollReveal>
@@ -68,10 +70,10 @@ export default function HowItWorks() {
                   2
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 group-hover:text-[#1966DD] mb-2 tracking-tight transition-colors">
-                  Match with a Peer
+                  {t("step2Title")}
                 </h3>
                 <p className="text-sm text-gray-600 leading-relaxed max-w-xs">
-                  SaHak will match you with the nearest available study partner.
+                  {t("step2Desc")}
                 </p>
               </div>
             </ScrollReveal>
@@ -145,10 +147,10 @@ export default function HowItWorks() {
                   3
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 group-hover:text-[#1966DD] mb-2 tracking-tight transition-colors">
-                  Enjoy Your Session
+                  {t("step3Title")}
                 </h3>
                 <p className="text-sm text-gray-600 leading-relaxed max-w-xs">
-                  Meet your study partner in live rooms, solve problems, and learn together.
+                  {t("step3Desc")}
                 </p>
               </div>
             </ScrollReveal>
@@ -160,10 +162,10 @@ export default function HowItWorks() {
                   4
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 group-hover:text-[#1966DD] mb-2 tracking-tight transition-colors">
-                  Pay and Rate
+                  {t("step4Title")}
                 </h3>
                 <p className="text-sm text-gray-600 leading-relaxed max-w-xs">
-                  Complete the session, rate your peer partner, and build your reputation.
+                  {t("step4Desc")}
                 </p>
               </div>
             </ScrollReveal>

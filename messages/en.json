@@ -1,0 +1,93 @@
+{
+  "Navbar": {
+    "home": "Home",
+    "howItWorks": "How It Works",
+    "aboutUs": "About Us",
+    "faqs": "FAQs",
+    "downloadApp": "Download App",
+    "account": "Account"
+  },
+  "Hero": {
+    "title": "Learn Better, Together.",
+    "subtitle": "Break out of the solo learning grind. We connect you with peers who share your goals so you can teach, learn, and grow as a team.",
+    "downloadApp": "Download App",
+    "howItWorks": "How It Works"
+  },
+  "HowItWorks": {
+    "header": "How SaHak Works",
+    "description": "Download the SaHak app from App Store or Play Store, create an account, set your learning goals, and connect with peer study partners.",
+    "step1Title": "Request a Peer",
+    "step1Desc": "Choose your subject, learning goals, and session type that fits your needs.",
+    "step2Title": "Match with a Peer",
+    "step2Desc": "SaHak will match you with the nearest available study partner.",
+    "step3Title": "Enjoy Your Session",
+    "step3Desc": "Meet your study partner in live rooms, solve problems, and learn together.",
+    "step4Title": "Pay and Rate",
+    "step4Desc": "Complete the session, rate your peer partner, and build your reputation."
+  },
+  "WhyChooseUs": {
+    "header": "Why Choose Us?"
+  },
+  "PersonalizedLearning": {
+    "badge": "Adaptive Path",
+    "header": "Personalized Learning",
+    "description": "Break out of the solo learning grind. We connect you with peers who share your goals so you can teach, learn, and grow as a team."
+  },
+  "EarnSection": {
+    "badge": "Monetize Skills",
+    "header": "Earn more than 100$/month",
+    "description": "Turn your knowledge into real income. Teach fellow students, lead peer study sessions, and share high-quality study materials to earn over $100 every month."
+  },
+  "CommunitySection": {
+    "badge": "Peer Network",
+    "header": "Supportive Community",
+    "description": "Join a thriving, collaborative network of students across Cambodia. Connect with study partners, exchange real-time feedback, and achieve your learning goals together."
+  },
+  "FaqSection": {
+    "header": "Frequently Asked Questions",
+    "description": "Have questions about SaHak? We have answers. Learn how our peer learning and mentoring network works.",
+    "q1": "What is SaHak and how does it work?",
+    "a1": "SaHak is a peer-to-peer collaborative learning platform built for Cambodian students. It matches you with compatible study partners based on your subjects, skill level, and schedule so you can solve problem sets, exchange study guides, and learn together.",
+    "q2": "Is SaHak free to use for students?",
+    "a2": "Yes! SaHak is free for all students to join. You can find study partners, join group study rooms, and access shared community learning resources at zero cost.",
+    "q3": "How can I earn money on SaHak?",
+    "a3": "If you excel in specific academic subjects or technical skills (such as Coding, Math, or Languages), you can apply to become a peer mentor. By hosting guided study sessions and sharing top-rated study guides, top mentors earn over $100 per month.",
+    "q4": "How does the peer matching system work?",
+    "a4": "Our smart matching system analyzes your university/high school courses, learning goals, preferred study times, and skill level to connect you with peers who complement your study style.",
+    "q5": "What subjects do we have?",
+    "a5": "SaHak supports a wide range of academic subjects including Math, Chemistry, History, Social Studies, Khmer, Physics, and Science."
+  },
+  "Footer": {
+    "description": "Empowering peer-to-peer collaborative learning. Connect with peers who share your goals, teach what you know, and learn together.",
+    "navTitle": "Navigation",
+    "navHome": "Home",
+    "navHowItWorks": "How It Works",
+    "navAboutUs": "About Us",
+    "navFaqs": "FAQs",
+    "resTitle": "Resources",
+    "resGuidelines": "Guidelines",
+    "resLearningHub": "Learning Hub",
+    "resHelpCenter": "Help Center",
+    "resContactSupport": "Contact Support",
+    "stayUpdated": "Stay Updated",
+    "newsletterDesc": "Subscribe to get the latest study guides, updates, and community news.",
+    "emailPlaceholder": "Enter your email address",
+    "privacyNotice": "We respect your privacy. Unsubscribe anytime.",
+    "copyright": "© {year} SaHak. Built with",
+    "forLearners": "for Cambodian learners.",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "cookieSettings": "Cookie Settings"
+  },
+  "DownloadApp": {
+    "badge": "📱 Mobile & Web App",
+    "header": "Ready to Elevate Your Learning?",
+    "description": "Download the SaHak app today on iOS and Android to find compatible study peers, join live group study rooms, and start earning cash rewards.",
+    "appStoreSub": "Download on the",
+    "appStore": "App Store",
+    "playStoreSub": "GET IT ON",
+    "playStore": "Google Play",
+    "featureBadgeHeader": "Join 5,000+ Students",
+    "featureBadgeDesc": "Start learning better together. Download today for iOS and Android devices across Cambodia."
+  }
+}

@@ -1,7 +1,10 @@
 import Image from "next/image";
 import ScrollReveal from "./ScrollReveal";
+import { useTranslations } from "next-intl";
 
 export default function EarnSection() {
+  const t = useTranslations("EarnSection");
+
   return (
     <section className="py-6 sm:py-8 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -37,13 +40,13 @@ export default function EarnSection() {
               {/* Right Column: Copy text */}
               <div className="md:col-span-7 order-1 md:order-2 flex flex-col items-start text-left">
                 <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-white/15 backdrop-blur-md border border-white/25 text-[11px] font-semibold text-red-100 mb-3 shadow-xs">
-                  Monetize Skills
+                  {t("badge")}
                 </span>
                 <h2 className="text-xl sm:text-2xl lg:text-3xl font-extrabold text-white tracking-tight leading-tight mb-3">
-                  Earn more than 100$/month
+                  {t("header")}
                 </h2>
                 <p className="text-sm sm:text-base text-white/95 font-normal leading-relaxed max-w-md">
-                  Turn your knowledge into real income. Teach fellow students, lead peer study sessions, and share high-quality study materials to earn over $100 every month.
+                  {t("description")}
                 </p>
               </div>
 

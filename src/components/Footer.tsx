@@ -2,8 +2,12 @@
 
 import { MessageSquare, Send, Heart } from "lucide-react";
 import ScrollReveal from "./ScrollReveal";
+import { useTranslations } from "next-intl";
 
 export default function Footer() {
+  const t = useTranslations("Footer");
+  const year = new Date().getFullYear();
+
   return (
     <footer className="relative bg-gray-950 text-gray-400 pt-16 pb-12 border-t border-gray-800/80 overflow-hidden">
       {/* Background Ambient Glow */}
@@ -19,7 +23,7 @@ export default function Footer() {
             </a>
 
             <p className="text-sm text-gray-400 font-normal leading-relaxed max-w-sm">
-              Empowering peer-to-peer collaborative learning. Connect with peers who share your goals, teach what you know, and learn together.
+              {t("description")}
             </p>
 
             {/* Social Icons */}
@@ -39,38 +43,38 @@ export default function Footer() {
           {/* Quick Links Columns */}
           <div className="md:col-span-4 grid grid-cols-2 gap-8">
             <div>
-              <h3 className="text-sm font-semibold text-white tracking-wider uppercase mb-4">Navigation</h3>
+              <h3 className="text-sm font-semibold text-white tracking-wider uppercase mb-4">{t("navTitle")}</h3>
               <ul className="space-y-2.5 text-sm">
-                <li><a href="#home" className="hover:text-white transition-colors">Home</a></li>
-                <li><a href="#how-it-works" className="hover:text-white transition-colors">How It Works</a></li>
-                <li><a href="#about" className="hover:text-white transition-colors">About Us</a></li>
-                <li><a href="#faqs" className="hover:text-white transition-colors">FAQs</a></li>
+                <li><a href="#home" className="hover:text-white transition-colors">{t("navHome")}</a></li>
+                <li><a href="#how-it-works" className="hover:text-white transition-colors">{t("navHowItWorks")}</a></li>
+                <li><a href="#about" className="hover:text-white transition-colors">{t("navAboutUs")}</a></li>
+                <li><a href="#faqs" className="hover:text-white transition-colors">{t("navFaqs")}</a></li>
               </ul>
             </div>
 
             <div>
-              <h3 className="text-sm font-semibold text-white tracking-wider uppercase mb-4">Resources</h3>
+              <h3 className="text-sm font-semibold text-white tracking-wider uppercase mb-4">{t("resTitle")}</h3>
               <ul className="space-y-2.5 text-sm">
-                <li><a href="#" className="hover:text-white transition-colors">Guidelines</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Learning Hub</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Help Center</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Contact Support</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">{t("resGuidelines")}</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">{t("resLearningHub")}</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">{t("resHelpCenter")}</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">{t("resContactSupport")}</a></li>
               </ul>
             </div>
           </div>
 
           {/* Newsletter Box */}
           <div className="md:col-span-4 flex flex-col items-start space-y-4">
-            <h3 className="text-sm font-semibold text-white tracking-wider uppercase">Stay Updated</h3>
+            <h3 className="text-sm font-semibold text-white tracking-wider uppercase">{t("stayUpdated")}</h3>
             <p className="text-sm text-gray-400">
-              Subscribe to get the latest study guides, updates, and community news.
+              {t("newsletterDesc")}
             </p>
 
             <form onSubmit={(e) => e.preventDefault()} className="w-full space-y-2">
               <div className="relative w-full">
                 <input
                   type="email"
-                  placeholder="Enter your email address"
+                  placeholder={t("emailPlaceholder")}
                   className="w-full bg-gray-900 border border-gray-800 rounded-xl px-4 py-3 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-[#1966DD] focus:ring-1 focus:ring-[#1966DD] transition-all pr-12"
                   required
                 />
@@ -82,7 +86,7 @@ export default function Footer() {
                   <Send className="w-4 h-4" />
                 </button>
               </div>
-              <p className="text-xs text-gray-500">We respect your privacy. Unsubscribe anytime.</p>
+              <p className="text-xs text-gray-500">{t("privacyNotice")}</p>
             </form>
           </div>
 
@@ -91,13 +95,13 @@ export default function Footer() {
         {/* Bottom Legal & Copyright Bar */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-500">
           <p className="flex items-center gap-1">
-            © {new Date().getFullYear()} SaHak. Built with <Heart className="w-3.5 h-3.5 text-red-500 inline fill-red-500" /> for Cambodian learners.
+            {t("copyright", { year })} <Heart className="w-3.5 h-3.5 text-red-500 inline fill-red-500" /> {t("forLearners")}
           </p>
 
           <div className="flex items-center space-x-6">
-            <a href="#" className="hover:text-gray-400 transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-gray-400 transition-colors">Terms of Service</a>
-            <a href="#" className="hover:text-gray-400 transition-colors">Cookie Settings</a>
+            <a href="#" className="hover:text-gray-400 transition-colors">{t("privacyPolicy")}</a>
+            <a href="#" className="hover:text-gray-400 transition-colors">{t("termsOfService")}</a>
+            <a href="#" className="hover:text-gray-400 transition-colors">{t("cookieSettings")}</a>
           </div>
         </div>
       </ScrollReveal>

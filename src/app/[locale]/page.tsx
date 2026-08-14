@@ -7,6 +7,7 @@ import PersonalizedLearning from "@/components/PersonalizedLearning";
 import EarnSection from "@/components/EarnSection";
 import FaqSection from "@/components/FaqSection";
 import Footer from "@/components/Footer";
+import DownloadApp from "@/components/DownloadApp"; // Added missing import
 
 export default function Home() {
   return (
@@ -20,7 +21,7 @@ export default function Home() {
       <CommunitySection />
       <FaqSection />
       <Footer />
+      <DownloadApp />
     </main>
   );
 }
-

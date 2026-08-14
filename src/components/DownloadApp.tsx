@@ -1,6 +1,9 @@
 import ScrollReveal from "./ScrollReveal";
+import { useTranslations } from "next-intl";
 
 export default function DownloadApp() {
+  const t = useTranslations("DownloadApp");
+
   return (
     <section id="download" className="py-16 sm:py-24 bg-white overflow-hidden relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -17,15 +20,15 @@ export default function DownloadApp() {
               {/* Left Copy */}
               <div className="lg:col-span-7 text-left space-y-4">
                 <span className="inline-flex items-center px-3.5 py-1 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-xs font-semibold text-blue-100">
-                  📱 Mobile & Web App
+                  {t("badge")}
                 </span>
 
                 <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight">
-                  Ready to Elevate Your Learning?
+                  {t("header")}
                 </h2>
 
                 <p className="text-base sm:text-lg text-blue-50/95 font-normal leading-relaxed max-w-xl">
-                  Download the SaHak app today on iOS and Android to find compatible study peers, join live group study rooms, and start earning cash rewards.
+                  {t("description")}
                 </p>
 
                 {/* Store Buttons */}
@@ -39,8 +42,8 @@ export default function DownloadApp() {
                       <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.37c.63-.77 1.08-1.84.96-2.92-.93.04-2.09.62-2.76 1.4-.59.68-1.11 1.77-.97 2.84 1.05.08 2.14-.54 2.77-1.32Z" />
                     </svg>
                     <div className="text-left leading-tight">
-                      <span className="text-[10px] uppercase font-semibold text-gray-500 block">Download on the</span>
-                      <span className="text-sm font-extrabold text-gray-900">App Store</span>
+                      <span className="text-[10px] uppercase font-semibold text-gray-500 block">{t("appStoreSub")}</span>
+                      <span className="text-sm font-extrabold text-gray-900">{t("appStore")}</span>
                     </div>
                   </a>
 
@@ -56,8 +59,8 @@ export default function DownloadApp() {
                       <path fill="#ffc107" d="M21.144 10.435l-3.672-2.115L13.792 12l3.68 3.68 3.672-2.115a1.81 1.81 0 0 0 0-3.13z" />
                     </svg>
                     <div className="text-left leading-tight">
-                      <span className="text-[10px] uppercase font-semibold text-gray-500 block">GET IT ON</span>
-                      <span className="text-sm font-extrabold text-gray-900">Google Play</span>
+                      <span className="text-[10px] uppercase font-semibold text-gray-500 block">{t("playStoreSub")}</span>
+                      <span className="text-sm font-extrabold text-gray-900">{t("playStore")}</span>
                     </div>
                   </a>
                 </div>
@@ -69,9 +72,9 @@ export default function DownloadApp() {
                   <div className="w-12 h-12 rounded-xl bg-white/20 flex items-center justify-center mx-auto mb-3 text-2xl">
                     🚀
                   </div>
-                  <h3 className="text-lg font-bold mb-1 text-white">Join 5,000+ Students</h3>
+                  <h3 className="text-lg font-bold mb-1 text-white">{t("featureBadgeHeader")}</h3>
                   <p className="text-xs text-blue-100 font-normal">
-                    Start learning better together. Download today for iOS and Android devices across Cambodia.
+                    {t("featureBadgeDesc")}
                   </p>
                 </div>
               </div>

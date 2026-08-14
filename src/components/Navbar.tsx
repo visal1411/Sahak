@@ -2,20 +2,23 @@
 
 import { useState } from "react";
 import { Bell, Menu, X, User } from "lucide-react";
+import { useTranslations } from "next-intl";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 interface NavbarProps {
   logoUrl?: string; // Placeholder for when user provides logo image later
 }
 
 export default function Navbar({ logoUrl }: NavbarProps) {
-  const [activeTab, setActiveTab] = useState("Home");
+  const [activeTab, setActiveTab] = useState("home");
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const t = useTranslations("Navbar");
 
   const navItems = [
-    { name: "Home", href: "#home" },
-    { name: "How It Works", href: "#how-it-works" },
-    { name: "About Us", href: "#about" },
-    { name: "FAQs", href: "#faqs" },
+    { key: "home", name: t("home"), href: "#home" },
+    { key: "howItWorks", name: t("howItWorks"), href: "#how-it-works" },
+    { key: "aboutUs", name: t("aboutUs"), href: "#about" },
+    { key: "faqs", name: t("faqs"), href: "#faqs" },
   ];
 
   return (
@@ -37,12 +40,12 @@ export default function Navbar({ logoUrl }: NavbarProps) {
           {/* Desktop Navigation Links */}
           <nav className="hidden md:flex items-center space-x-8 lg:space-x-12">
             {navItems.map((item) => {
-              const isActive = activeTab === item.name;
+              const isActive = activeTab === item.key;
               return (
                 <a
-                  key={item.name}
+                  key={item.key}
                   href={item.href}
-                  onClick={() => setActiveTab(item.name)}
+                  onClick={() => setActiveTab(item.key)}
                   className={`relative py-2 text-sm sm:text-base font-semibold transition-colors ${
                     isActive ? "text-gray-900" : "text-gray-600 hover:text-gray-900"
                   }`}
@@ -58,11 +61,13 @@ export default function Navbar({ logoUrl }: NavbarProps) {
 
           {/* Right Action Icons & Download CTA */}
           <div className="hidden md:flex items-center space-x-4">
+            <LanguageSwitcher />
+            
             <a
               href="#download"
               className="inline-flex items-center justify-center px-4 py-2 rounded-xl bg-[#1966DD] text-white font-semibold text-sm shadow-xs hover:bg-[#1556BD] transition-all active:scale-[0.98]"
             >
-              Download App
+              {t("downloadApp")}
             </a>
 
             <button
@@ -85,6 +90,7 @@ export default function Navbar({ logoUrl }: NavbarProps) {
 
           {/* Mobile Menu Button */}
           <div className="flex md:hidden items-center space-x-3">
+            <LanguageSwitcher />
             <button
               type="button"
               className="p-1.5 text-gray-700 rounded-md hover:bg-gray-100 focus:outline-none"
@@ -108,14 +114,14 @@ export default function Navbar({ logoUrl }: NavbarProps) {
         <div className="md:hidden border-b border-gray-200 bg-white px-4 pt-2 pb-6 space-y-3">
           {navItems.map((item) => (
             <a
-              key={item.name}
+              key={item.key}
               href={item.href}
               onClick={() => {
-                setActiveTab(item.name);
+                setActiveTab(item.key);
                 setMobileMenuOpen(false);
               }}
               className={`block px-3 py-2.5 rounded-lg text-base font-semibold ${
-                activeTab === item.name
+                activeTab === item.key
                   ? "bg-blue-50 text-[#1966DD]"
                   : "text-gray-700 hover:bg-gray-50"
               }`}
@@ -124,7 +130,7 @@ export default function Navbar({ logoUrl }: NavbarProps) {
             </a>
           ))}
           <div className="pt-4 border-t border-gray-100 flex items-center justify-between px-3">
-            <span className="text-sm font-medium text-gray-600">Account</span>
+            <span className="text-sm font-medium text-gray-600">{t("account")}</span>
             <div className="w-9 h-9 rounded-full bg-gray-200 flex items-center justify-center">
               <User className="w-5 h-5 text-gray-600" />
             </div>

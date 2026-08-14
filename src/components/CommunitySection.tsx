@@ -1,7 +1,10 @@
 import Image from "next/image";
 import ScrollReveal from "./ScrollReveal";
+import { useTranslations } from "next-intl";
 
 export default function CommunitySection() {
+  const t = useTranslations("CommunitySection");
+
   return (
     <section className="py-6 sm:py-8 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -20,13 +23,13 @@ export default function CommunitySection() {
               {/* Left Text Content */}
               <div className="md:col-span-7 flex flex-col items-start text-left">
                 <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-[11px] font-semibold text-blue-100 mb-3 shadow-xs">
-                  Peer Network
+                  {t("badge")}
                 </span>
                 <h2 className="text-xl sm:text-2xl lg:text-3xl font-extrabold text-white tracking-tight leading-tight mb-3">
-                  Supportive Community
+                  {t("header")}
                 </h2>
                 <p className="text-sm sm:text-base text-blue-50/95 font-normal leading-relaxed max-w-md">
-                  Join a thriving, collaborative network of students across Cambodia. Connect with study partners, exchange real-time feedback, and achieve your learning goals together.
+                  {t("description")}
                 </p>
               </div>
 

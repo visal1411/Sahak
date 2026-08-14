@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
 import ScrollReveal from "./ScrollReveal";
+import { useTranslations } from "next-intl";
 
 interface FaqItem {
   question: string;
@@ -11,33 +12,14 @@ interface FaqItem {
 
 export default function FaqSection() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
+  const t = useTranslations("FaqSection");
 
   const faqs: FaqItem[] = [
-    {
-      question: "What is SaHak and how does it work?",
-      answer:
-        "SaHak is a peer-to-peer collaborative learning platform built for Cambodian students. It matches you with compatible study partners based on your subjects, skill level, and schedule so you can solve problem sets, exchange study guides, and learn together.",
-    },
-    {
-      question: "Is SaHak free to use for students?",
-      answer:
-        "Yes! SaHak is free for all students to join. You can find study partners, join group study rooms, and access shared community learning resources at zero cost.",
-    },
-    {
-      question: "How can I earn money on SaHak?",
-      answer:
-        "If you excel in specific academic subjects or technical skills (such as Coding, Math, or Languages), you can apply to become a peer mentor. By hosting guided study sessions and sharing top-rated study guides, top mentors earn over $100 per month.",
-    },
-    {
-      question: "How does the peer matching system work?",
-      answer:
-        "Our smart matching system analyzes your university/high school courses, learning goals, preferred study times, and skill level to connect you with peers who complement your study style.",
-    },
-    {
-      question: "What subjects do we have?",
-      answer:
-        "SaHak supports a wide range of academic subjects including Math, Chemistry, History, Social Studies, Khmer, Physics, and Earth Science.",
-    },
+    { question: t("q1"), answer: t("a1") },
+    { question: t("q2"), answer: t("a2") },
+    { question: t("q3"), answer: t("a3") },
+    { question: t("q4"), answer: t("a4") },
+    { question: t("q5"), answer: t("a5") },
   ];
 
   const toggleFaq = (index: number) => {
@@ -52,13 +34,13 @@ export default function FaqSection() {
         <div className="text-center mb-16">
           <ScrollReveal direction="up" delay={100}>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 tracking-tight leading-tight mb-4">
-              Frequently Asked Questions
+              {t("header")}
             </h2>
           </ScrollReveal>
 
           <ScrollReveal direction="up" delay={200}>
             <p className="text-base sm:text-lg text-gray-600 font-normal leading-relaxed">
-              Have questions about SaHak? We have answers. Learn how our peer learning and mentoring network works.
+              {t("description")}
             </p>
           </ScrollReveal>
         </div>
